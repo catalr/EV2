@@ -8,8 +8,14 @@ namespace ComunicacionesModel.DTO
 {
     public abstract class Medidor
     {
-        private int id;
-        private DateTime fechaInstalacion;
+        protected int id;
+        protected DateTime fechaInstalacion;
+
+        public Medidor(int v, DateTime now)
+        {
+            this.id = v;
+            this.fechaInstalacion = now;
+        }
 
         public int Id { get => id; set => id = value; }
         public DateTime FechaInstalacion { get => fechaInstalacion; set => fechaInstalacion = value; }

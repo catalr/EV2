@@ -8,5 +8,9 @@ namespace ComunicacionesModel.DAL
 {
     class LecturaDALFactory
     {
+        public static ILecturasDAL CreateDAL()
+        {
+            return LecturaDALArchivos.GetInstancia();
+        }
     }
 }

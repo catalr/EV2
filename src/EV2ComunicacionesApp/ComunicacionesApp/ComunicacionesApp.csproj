@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{09C244C6-DA77-4BE4-90B7-53765D2D6916}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ComunicacionesModel</RootNamespace>
-    <AssemblyName>ComunicacionesModel</AssemblyName>
+    <ProjectGuid>{41FEFAC4-E0DF-483C-A737-61799E89412B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ComunicacionesApp</RootNamespace>
+    <AssemblyName>ComunicacionesApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,27 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\ILectura.cs" />
-    <Compile Include="DAL\IMedidorDAL.cs" />
-    <Compile Include="DAL\LecturaDALArchivos.cs" />
-    <Compile Include="DAL\LecturaDALFactory.cs" />
-    <Compile Include="DAL\MedidorConsumoDALArchivos.cs" />
-    <Compile Include="DAL\MedidorDALFactory.cs" />
-    <Compile Include="DTO\Ciudad.cs" />
-    <Compile Include="DTO\Direccion.cs" />
-    <Compile Include="DTO\EstacionServicio.cs" />
-    <Compile Include="DTO\Lectura.cs" />
-    <Compile Include="DTO\Medidor.cs" />
-    <Compile Include="DTO\MedidorConsumo.cs" />
-    <Compile Include="DTO\MedidorTrafico.cs" />
-    <Compile Include="DTO\PuntoCarga.cs" />
-    <Compile Include="DTO\Region.cs" />
-    <Compile Include="DTO\TarifaElectrica.cs" />
-    <Compile Include="DTO\ZonaHoraria.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
