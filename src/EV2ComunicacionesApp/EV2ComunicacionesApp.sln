@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EV2ComunicacionesApp", "EV2ComunicacionesApp\EV2ComunicacionesApp.csproj", "{ADF6AA46-E1FE-4D0A-8B06-87EB65236F18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunicacionesApp", "ComunicacionesApp\ComunicacionesApp.csproj", "{41FEFAC4-E0DF-483C-A737-61799E89412B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F4A2955-6223-405A-9B0B-63B82B364673} = {2F4A2955-6223-405A-9B0B-63B82B364673}
+		{09C244C6-DA77-4BE4-90B7-53765D2D6916} = {09C244C6-DA77-4BE4-90B7-53765D2D6916}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunicacionesModel", "ComunicacionesModel\ComunicacionesModel.csproj", "{09C244C6-DA77-4BE4-90B7-53765D2D6916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketUtils", "SocketUtils\SocketUtils.csproj", "{2F4A2955-6223-405A-9B0B-63B82B364673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimuladorMedidor", "SimuladorMedidor\SimuladorMedidor.csproj", "{5B685A15-844A-4C2C-8678-0BC57D0376EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +21,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ADF6AA46-E1FE-4D0A-8B06-87EB65236F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADF6AA46-E1FE-4D0A-8B06-87EB65236F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADF6AA46-E1FE-4D0A-8B06-87EB65236F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADF6AA46-E1FE-4D0A-8B06-87EB65236F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41FEFAC4-E0DF-483C-A737-61799E89412B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FEFAC4-E0DF-483C-A737-61799E89412B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FEFAC4-E0DF-483C-A737-61799E89412B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FEFAC4-E0DF-483C-A737-61799E89412B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{09C244C6-DA77-4BE4-90B7-53765D2D6916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{09C244C6-DA77-4BE4-90B7-53765D2D6916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09C244C6-DA77-4BE4-90B7-53765D2D6916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09C244C6-DA77-4BE4-90B7-53765D2D6916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4A2955-6223-405A-9B0B-63B82B364673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4A2955-6223-405A-9B0B-63B82B364673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4A2955-6223-405A-9B0B-63B82B364673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4A2955-6223-405A-9B0B-63B82B364673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B685A15-844A-4C2C-8678-0BC57D0376EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B685A15-844A-4C2C-8678-0BC57D0376EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B685A15-844A-4C2C-8678-0BC57D0376EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B685A15-844A-4C2C-8678-0BC57D0376EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

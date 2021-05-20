@@ -7,10 +7,11 @@ using ComunicacionesModel.DTO;
 
 namespace ComunicacionesModel.DAL
 {
-    public interface ILecturasDAL
+    public class MedidorTraficoDALFactory
     {
-        List<Lectura> ObtenerLecturasTrafico();
-        void RegistrarLectura(Lectura lectura);
-        List<Lectura> ObtenerLecturasConsumo();
+        public static IMedidorDAL CreateDal()
+        {
+            return MedidorTraficoDALArchivos.GetInstancia();
+        }
     }
 }

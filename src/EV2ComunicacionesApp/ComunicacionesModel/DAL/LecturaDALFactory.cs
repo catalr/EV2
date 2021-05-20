@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComunicacionesModel.DAL
 {
-    class LecturaDALFactory
+    public class LecturaDALFactory
     {
         public static ILecturasDAL CreateDAL()
         {

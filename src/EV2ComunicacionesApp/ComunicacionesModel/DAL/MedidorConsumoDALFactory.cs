@@ -7,7 +7,7 @@ using ComunicacionesModel.DTO;
 
 namespace ComunicacionesModel.DAL
 {
-    public class MedidorDALFactory
+    public class MedidorConsumoDALFactory
     {
         public static IMedidorDAL CreateDal()
         {

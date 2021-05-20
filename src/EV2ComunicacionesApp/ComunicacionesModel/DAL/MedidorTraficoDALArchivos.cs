@@ -11,7 +11,7 @@ namespace ComunicacionesModel.DAL
     public class MedidorTraficoDALArchivos : IMedidorDAL
     {
         private static List<Medidor> medidoresTrafico = new List<Medidor>();
-        
+
         private MedidorTraficoDALArchivos()
         {
             medidoresTrafico.Add(new MedidorTrafico(5, DateTime.Now));
@@ -31,9 +31,14 @@ namespace ComunicacionesModel.DAL
             return instancia;
         }
 
+        public bool Buscar(int tipo)
+        {
+            return medidoresTrafico.Exists(x => x.Id == tipo);
+        }
+        
 
        
-        List<Medidor> IMedidorDAL.ObtenerMedidores()
+        public List<Medidor> ObtenerMedidores()
         {
 
             return medidoresTrafico;

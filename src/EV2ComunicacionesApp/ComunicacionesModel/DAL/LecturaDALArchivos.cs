@@ -30,7 +30,7 @@ namespace ComunicacionesModel.DAL
         private string trafico = Directory.GetCurrentDirectory()
            + Path.DirectorySeparatorChar + "trafico.txt";
 
-        public List<Lectura> ObtenerLecturasConsumos()
+        public List<Lectura> ObtenerLecturasConsumo()
         {
             return ObtenerLectura(consumo);
         }
@@ -85,7 +85,10 @@ namespace ComunicacionesModel.DAL
             {
                 using (StreamWriter writer = new StreamWriter(path, true))
                 {
-                    writer.WriteLine(JsonConvert.SerializeObject(l,Formatting.None));
+                    writer.WriteLine(JsonConvert.SerializeObject(l,Formatting.None, new JsonSerializerSettings
+                        {
+                        NullValueHandling = NullValueHandling.Ignore
+                        }));
                     writer.Flush();
                 }
                 

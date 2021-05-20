@@ -31,9 +31,12 @@ namespace ComunicacionesModel.DAL
             return instancia;
         }
 
+        public bool Buscar(int tipo)
+        {
+            return medidoresConsumo.Exists(x => x.Id == tipo);
+        }
 
-       
-        List<Medidor> IMedidorDAL.ObtenerMedidores()
+        public List<Medidor> ObtenerMedidores()
         {
 
             return medidoresConsumo;

@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SocketUtils
 {
-    class SocketServer
+    public class SocketServer
     {
         private int puerto;
         private Socket servidor;

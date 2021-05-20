@@ -10,5 +10,6 @@ namespace ComunicacionesModel.DAL
     public interface IMedidorDAL
     {
         List<Medidor> ObtenerMedidores();
+        bool Buscar(int tipo);
     }
 }
